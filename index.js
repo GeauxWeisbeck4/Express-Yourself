@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.resolve('pages/index.html'));
 });
 
+app.get('/about', (req, res) => {
+  res.sendFile(path.resolve('pages/about.html'));
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
